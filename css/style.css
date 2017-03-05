@@ -1,0 +1,111 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Abel);
+/* Base
+------------------------------------------------------------*/
+html {
+  font-size: 62.5%; }
+
+body {
+  color: #4c4c4c;
+  font-size: 1.4rem;
+  font-family: "游ゴシック", YuGothic, "メイリオ", Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  line-height: 1.6;
+  letter-spacing: 0.1em;
+  background-color: #fdfcf6; }
+
+
+/* Box
+------------------------------------------------------------*/
+
+.container {
+  flex-direction: column;
+}
+
+.box {
+  border: solid 1px #f4f4f4;
+  margin: 10px;
+  flex: 1;
+}
+
+.box_title {
+  position: relative;
+  padding: 5px 15px;
+  background: #f4f4f4;
+}
+
+.box_text {
+  padding: 15px;
+  background: #fafafa;
+  overflow-x: scroll;
+  line-height: 1.5;
+}
+
+/* Header
+------------------------------------------------------------*/
+header .test-icon {
+  background-image: url("../images/img_l7_01.jpg");
+  height: 250px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+header .headertext{
+  font-size: 1.6rem;
+  width: 80%;
+  margin: 0 auto;
+  clear: both; 
+}
+
+/* Footer
+------------------------------------------------------------*/
+footer {
+  background-color: #bea300;
+  padding: 10px 0;
+  text-align: center;
+  color: #FFF; }
+
+footer .footertext {
+  font-size: 1.6rem;
+  width: 80%;
+  margin: 0 auto;
+  clear: both; 
+  word-wrap: break-word;
+}
+
+.btn {
+  margin-top: 20px;
+  width:200px;
+  font-size:15px;
+  font-weight:bold;
+  text-decoration:none;
+  display:block;
+  padding:8px 0 10px;
+  color:#fff;
+  background-color:#14c0c9;
+  border-radius:5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  /* Base
+  ------------------------------------------------------------*/
+  a:hover {
+    text-decoration: underline; }
+
+  /* Header
+  ------------------------------------------------------------*/
+  header .test-icon {
+    background-image: url("../images/img_l7_01.jpg");
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+}
